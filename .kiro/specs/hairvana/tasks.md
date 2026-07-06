@@ -8,7 +8,7 @@ Build HAIRVANA as a mobile-first PWA using React + TypeScript (frontend) and Nod
 
 ## Tasks
 
-- [-] 1. Project setup and shared foundations
+- [ ] 1. Project setup and shared foundations
   - Initialise monorepo (or separate `client/` and `server/` directories) with TypeScript, ESLint, Prettier, and Vitest configured for both packages
   - Create `server/src/db/schema.sql` with all PostgreSQL table definitions from the ERD: `users`, `stylist_profiles`, `vendor_profiles`, `hairstyles`, `products`, `hairstyle_products`, `bookings`, `payments`, `reviews`, `portfolio_photos`, `notifications`
   - Add database migration tooling (e.g., `node-postgres` + `db-migrate` or `Drizzle` migrations) and seed script for local dev data
