@@ -21,7 +21,7 @@ import {
   portfolioPhotos,
   notifications,
 } from './schema.js';
-import bcrypt from 'bcrypt';
+import bcrypt from 'bcryptjs';
 
 const SALT_ROUNDS = 10;
 
@@ -250,8 +250,8 @@ async function seed() {
       delivery_address: null,
       total_cost: '4400', // 5*350 + 3*420 + 2500 + 150
       deposit_amount: '1100',
-      appointment_at: appointmentAt.toISOString(),
-      confirmed_at: new Date().toISOString(),
+      appointment_at: appointmentAt,
+      confirmed_at: new Date(),
     })
     .returning();
 
@@ -264,7 +264,7 @@ async function seed() {
     mpesa_reference: 'QGH7X1K2PO',
     phone_number: '+254700000002',
     status: 'Paid',
-    paid_at: new Date().toISOString(),
+    paid_at: new Date(),
   });
 
   console.log('  ✓ Inserted payment');

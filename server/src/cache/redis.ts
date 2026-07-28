@@ -10,7 +10,7 @@
  * TTL constants are defined here so every service references the same values.
  */
 
-import Redis from 'ioredis';
+import Redis from 'ioredis/built/index.js';
 
 // ─── TTL constants (seconds) ──────────────────────────────────────────────────
 
